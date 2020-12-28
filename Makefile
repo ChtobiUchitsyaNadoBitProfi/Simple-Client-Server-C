@@ -1,10 +1,10 @@
-all: server client
+all: bin/server bin/client
 
-server: server.c erproc.c liteSH.c
-	gcc -Wall -o server server.c erproc.c liteSH.c -lm
+bin/server: src/server.c src/libs/erproc.c src/libs/liteSH.c
+	gcc -Wall -o bin/server src/server.c src/libs/erproc.c src/libs/liteSH.c -lm
 
-client: client.c erproc.c liteSH.c
-	gcc -Wall -o client client.c erproc.c liteSH.c -lm
+bin/client: src/client.c src/libs/erproc.c src/libs/liteSH.c
+	gcc -Wall -o bin/client src/client.c src/libs/erproc.c src/libs/liteSH.c -lm
 
 clean: 
-	rm -rf server && rm -rf client
+	rm -rf bin/server && rm -rf bin/client
