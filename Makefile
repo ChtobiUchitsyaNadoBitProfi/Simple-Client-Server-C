@@ -37,10 +37,6 @@ install: bin/$(CLIENT) bin/$(SERVER)
 	cp -f bin/$(SERVER) $(DESTDIR)/usr/bin
 	chmod 755 $(DESTDIR)/usr/bin/LiteSHserver
 	
-	
-	mkdir -p $(DESTDIR)/usr/lib
-	cp -f build/libhelp.so $(DESTDIR)/usr/lib
-	
 	mkdir -p $(DESTDIR)/etc/systemd/system
 	cp -f $(SERVICE) $(DESTDIR)/etc/systemd/system
 	chmod 755 $(DESTDIR)/etc/systemd/system/LiteSH.service
