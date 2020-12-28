@@ -1,3 +1,3 @@
-server
-client
-
+build/*.o
+bin/LiteSH
+bin/LiteSHserver
