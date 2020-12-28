@@ -4,8 +4,7 @@ Description=LiteSH Daemon
 [Service]
 Type=simple
 User=root
-# change path to programm
-ExecStart=/home/jac/CLionProjects/server/cmake-build-debug/server
+ExecStart=/usr/bin/LiteSHserver
 KillMode=control-group
 Restart=always
 
