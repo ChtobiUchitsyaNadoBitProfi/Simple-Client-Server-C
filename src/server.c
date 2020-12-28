@@ -3,8 +3,8 @@
 #include <string.h>
 #include <unistd.h> // to read and sleep
 #include <netinet/in.h>
-#include "erproc.h"
-#include "liteSH.h"
+#include "libs/erproc.h"
+#include "libs/liteSH.h"
 
 int main() {
     int server = Socket(AF_INET, SOCK_STREAM, 0);
